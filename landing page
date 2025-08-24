@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indicraft - Indian Handicrafts</title>
+   <style>
+    /* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff8f0;
+  color: #3e2c23;
+}
+
+/* Header */
+header {
+  background-color: #5a2a0c;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav a:hover,
+.login-button {
+  background-color: #d2691e;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x400?text=Traditional+Banner') no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.explore-btn {
+  background-color: #5a2a0c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.explore-btn:hover {
+  background-color: #a0522d;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #fff1e5;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.search-section h2 {
+  font-size: 2rem;
+  color: #5a2a0c;
+  margin-bottom: 1.5rem;
+}
+
+.search-box {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #d2691e;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-box input {
+  border: none;
+  padding: 1rem;
+  width: 300px;
+  font-size: 1rem;
+  outline: none;
+  border-right: 1px solid #eee;
+}
+
+.search-box button {
+  background-color: #5a2a0c;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #d2691e;
+}
+
+/* Product Section */
+.products {
+  padding: 3rem 2rem;
+  background-color: #fef3e6;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.product {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* Shop Section */
+.shop-section {
+  padding: 3rem 2rem;
+  background-color: #fff1e5;
+  text-align: center;
+}
+
+.shop-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.shop-btn {
+  background-color: #5a2a0c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.shop-btn:hover {
+  background-color: #d2691e;
+}
+
+/* Footer */
+footer {
+  background-color: #5a2a0c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+   </style>
+</head>
+<body>
+
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Indicraft</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our Product</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="login-button">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span class="highlight">Indicraft</span></h1>
+      <p>Celebrate traditional Indian art & culture</p>
+      <a href="#" class="explore-btn">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- Search Product Section -->
+  <section class="search-section">
+    <h2>Search Product</h2>
+    <div class="search-box">
+      <input type="text" placeholder="Search handmade crafts, woodwork, pottery, jewelry...">
+      <button type="button">🔍 Search</button>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products">
+    <h2>Our Featured Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://i.ibb.co/m5XXggLN/product-jpeg-500x500.png" alt="Pottery">
+        <p>Handmade Pottery</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/jCQ5rDP/1-825fd47b-4917-41e1-90a0-3c0eea6a7987-1500x.jpg" alt="Jewelry">
+        <p>Ethnic Jewelry</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/k6cf5ZJZ/250px-Work-of-Master-Woodcarver-Alexander-A-Grabovetskiy.jpg" alt="Woodcraft">
+        <p>Wooden Carvings</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Now Section -->
+  <section class="shop-section">
+    <h2>Shop Now</h2>
+    <a href="#" class="shop-btn">Start Shopping</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Indicraft | Crafted with tradition in India 🇮🇳</p>
+  </footer>
+
+</body>
+</html>
